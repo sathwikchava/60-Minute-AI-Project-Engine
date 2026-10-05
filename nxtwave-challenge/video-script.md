@@ -1,106 +1,79 @@
-# 3-Minute Video Script
+# 3 Minute Video Script
 
-**Sathwik Reddy | NxtWave Growth Intern Challenge | Round 1**  
-**Target runtime: 2:45 – 3:00 | Record with screen capture + webcam PiP**
-
-> **Before recording:** Open `http://localhost:3000` (or live Netlify URL) in Chrome, clear localStorage, have the page loaded on the hero section. Keep terminal or VS Code visible for a brief code peek.  
-> **Voice note:** Speak at 80% of your normal pace. You know this stuff — don't rush.
-
----
-
-## Shot List & Timestamp Guide
-
-| Time | What's on screen | What you say |
-|------|-----------------|--------------|
-| 0:00 – 0:12 | **Webcam only, clean background** | Opening hook |
-| 0:12 – 0:32 | **Slide to browser → hero section of the live site** | The problem |
-| 0:32 – 0:52 | **Scroll to AI Project Matcher** | The insight |
-| 0:52 – 1:30 | **Live demo: register → get referral code → simulate 3 friends** | Demo the system |
-| 1:30 – 1:55 | **Admin dashboard: KPI cards + leaderboard + channel bars** | The scale engine |
-| 1:55 – 2:15 | **WhatsApp message kit: copy template, show WhatsApp share tap** | The automation layer |
-| 2:15 – 2:40 | **Back to webcam or slides** | Strategy rationale |
-| 2:40 – 3:00 | **Webcam close** | What I learned |
+Candidate: Chava Sathwik
+Role: 4th Year Engineering Student
+Challenge: NxtWave Growth Intern Round 1
+Duration: 2 minutes 45 seconds to 3 minutes
 
 ---
 
-## Full Script (First-Person, Natural Voice)
+## Shot List and Timing Guide
+
+| Time | Screen View | Spoken Focus |
+|---|---|---|
+| 0:00 to 0:15 | Webcam full screen | Opening problem |
+| 0:15 to 0:35 | Browser hero section | The growth engine approach |
+| 0:35 to 0:55 | AI Project Finder | Personal project matching |
+| 0:55 to 1:35 | Live form and referral unlock | Demonstration of viral loop |
+| 1:35 to 2:00 | Admin dashboard | Live registration tracking |
+| 2:00 to 2:20 | WhatsApp message kit | Ambassador copy paste templates |
+| 2:20 to 2:40 | Campaign budget split | Budget rationale |
+| 2:40 to 3:00 | Webcam close | Final learning and sign off |
 
 ---
 
-### [0:00 – 0:12] OPENING HOOK
-**[Webcam only]**
+## Spoken Script
 
-> "Final-year engineering students are three months away from placement season. Most of them have the same resume. Same tutorials. Same projects. Zero live deployments. NxtWave is offering them a way out — a free 60-minute workshop where they build and ship a real AI app. My job: get 500 of them to register in 7 days with two thousand rupees and any tools I want."
+### [0:00 to 0:15] Opening
+(Camera on face)
 
----
-
-### [0:12 – 0:32] THE PROBLEM
-**[Switch to browser — show hero section, scroll slowly]**
-
-> "Everyone was going to build a landing page. So I didn't build a landing page. I built a growth engine. This is it — running live. Mobile-first, because 90% of registrations come from a WhatsApp link tap. Notice the registration counter — 348 students from 18 Tier-2 and Tier-3 colleges, seeded as realistic demo data so you can see the system working."
+"4th year engineering students are preparing for campus placements right now. Most students have the exact same basic projects on their resume. NxtWave is offering a free 60 minute workshop where they build and deploy a real working AI application. My goal is to get 500 engineering students registered in 7 days on a budget of Rs 2000."
 
 ---
 
-### [0:32 – 0:52] THE INSIGHT
-**[Scroll to AI Project Matcher section, select branch and interest, click Generate]**
+### [0:15 to 0:35] The Solution
+(Switch to live browser page on hero section)
 
-> "The insight that differentiated this: final-year students don't just want to attend a workshop. They want to know exactly what THEY will build. So I built this — an AI project idea matcher. Pick your branch, pick your interest, and instantly get a tailored 60-minute blueprint with the exact tech stack, a plain-English summary of what you'll build, and a ready-made STAR-format resume bullet point. This removes the biggest objection: 'I don't know what AI project even applies to me.'"
-
----
-
-### [1:00 – 1:30] LIVE REGISTRATION → REFERRAL ENGINE
-**[Scroll to register form → fill in details quickly → submit → scroll to Referral Hub]**
-
-> "Registration is validated — duplicate email and phone detection happens client-side instantly. The moment you confirm your seat, you get a unique referral link. Now here's the growth multiplier — every student who gets 3 friends to join unlocks a VIP reward tier: AI prompt packs, GitHub starter repos, and a 1-on-1 AI resume critique. Watch what happens when I simulate three batchmates joining."
-
-**[Click 'Simulate Friend Sign-up' three times]**
-
-> "The progress bar hits three of three, all three milestone tiers unlock. That one-tap WhatsApp share button sends a pre-written message with their personal link directly to any group. That's the viral loop — every registrant becomes a distributor."
+"Most applicants will build a static landing page. But a static page stops bringing results once you stop posting links. So I built an automated growth engine. It is mobile friendly since almost all student clicks come from WhatsApp. You can see 348 registrations already tracked from college campuses in our demo simulation."
 
 ---
 
-### [1:30 – 1:55] ADMIN DASHBOARD
-**[Scroll to Admin Dashboard section]**
+### [0:35 to 0:55] AI Project Finder
+(Scroll to Project Finder, select branch and click Generate)
 
-> "On the backend, campus ambassadors and I get this real-time dashboard. KPI cards showing total registrations against the 500 target, referral viral coefficient, active ambassadors. Channel breakdown shows exactly which source is driving registrations — ambassadors at 54%, viral referrals at 28%. The leaderboard ranks ambassadors by college so I know where to double down. One button exports everything as a CSV — placement cells love this."
-
----
-
-### [1:55 – 2:15] WHATSAPP KIT
-**[Scroll to WhatsApp Kit section → switch tabs → click Copy]**
-
-> "Ambassadors are only as effective as their messaging. So I built a ready-to-broadcast message kit — five templates: the official class group drop, the placement cell email, the T-minus-24-hour reminder, the one-hour urgent blast, and the post-event certificate drop. Switch the ambassador selector, the link auto-personalizes. One click copies. This is the automation layer — without needing any n8n server running."
+"Students hesitate when they do not know what project fits their branch. So I added this branch project finder. A student selects their branch like CSE or ECE and gets an instant project blueprint with tech stack, build summary, and a ready resume bullet point. This removes doubt before they even register."
 
 ---
 
-### [2:15 – 2:40] STRATEGY RATIONALE
-**[Back to webcam, or show the PPTX slide briefly]**
+### [0:55 to 1:35] Registration and Referral Engine
+(Fill sample name and click Confirm My Free Seat)
 
-> "Why only four channels? Because prioritization is more valuable than a list of twenty ideas. Campus ambassadors give me pre-trusted peer distribution at zero marginal cost per message. The referral loop compounds their work. Club emails add institutional credibility. One boosted LinkedIn post stretches the remaining 800 rupees to reach students not in any existing group. That's the entire 2,000 rupees allocated to direct student incentives — not tools, not ads, not design. Tools are free. Student trust is earned."
-
----
-
-### [2:40 – 3:00] CLOSING & LEARNINGS
-**[Webcam only]**
-
-> "The biggest thing I learned: the difference between a landing page and a growth system is whether the system keeps working after you stop touching it. The referral loop runs without me. The ambassador kit sends messages without me. The dashboard tracks results without me. That's what I tried to build. I'm Sathwik Reddy, B.Tech CSE 2027, and this is my Round 1 submission. Thanks for watching."
+"Registration is fast and checks for duplicate phone numbers and emails. The moment a student registers, they receive a personal invite link. If they invite 3 friends, they unlock bonus project repositories and resume reviews. When batchmates register through this link, the progress bar updates and unlocks the study resources automatically. This turns every student into an active advocate."
 
 ---
 
-## Recording Checklist
+### [1:35 to 2:00] Coordinator Dashboard
+(Scroll to Coordinator Dashboard)
 
-- [ ] Microphone tested — no echo, no background noise
-- [ ] Chrome DevTools closed, no extensions visible
-- [ ] `http://localhost:3000` (or Netlify URL) loaded and scrolled to hero before recording
-- [ ] localStorage **cleared** so the registration form demo starts fresh
-- [ ] Demo data seeded (click "Seed 348 Demo Leads" button in admin dashboard)  
-- [ ] Screen resolution: 1920×1080 or 1536×864 minimum
-- [ ] Record with OBS, Loom, or Windows Game Bar (Win+G)
-- [ ] Edit to exactly 2:45–3:00 — do NOT exceed 3:10
+"For tracking, we have this coordinator dashboard. It shows total signups against the 500 goal, referral ratios, and college breakdowns. We can see which college ambassador brings the most signups and export everything to CSV with one click."
 
 ---
 
-## Thumbnail / Cover Slide Text (Optional)
+### [2:00 to 2:20] WhatsApp Message Templates
+(Scroll to WhatsApp kit and click Copy)
 
-> **"I Built a Referral-Powered Growth Engine (Not Just a Landing Page)"**  
-> NxtWave Growth Intern Challenge | Sathwik Reddy | CSE 2027
+"To make campus outreach easy, I added pre written WhatsApp templates. Student ambassadors can choose their name, select a message type like class group drop or reminder, and copy it formatted with their personal link in one click."
+
+---
+
+### [2:20 to 2:40] Budget Strategy
+(Show webcam or budget summary)
+
+"I focused our Rs 2000 budget on direct campus ambassador incentives rather than paid advertisements. Peer recommendations in college WhatsApp groups convert much better than ads for student events. The referral loop helps bring extra registrations with zero extra cost."
+
+---
+
+### [2:40 to 3:00] Conclusion
+(Camera on face)
+
+"The biggest lesson here is that a real growth project needs to work like a system that continues running on its own. I am Chava Sathwik, a 4th year engineering student, and this is my Round 1 submission for NxtWave. Thank you for reviewing my work."

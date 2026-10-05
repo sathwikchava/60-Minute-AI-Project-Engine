@@ -8,6 +8,6 @@
     "test": "node tests/test-engine.js"
   },
   "keywords": ["nxtwave", "growth", "referral-engine", "glassmorphism", "edtech"],
-  "author": "Sathwik Reddy",
+  "author": "Chava Sathwik",
   "license": "MIT"
 }

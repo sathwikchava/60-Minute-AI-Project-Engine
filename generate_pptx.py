@@ -59,7 +59,7 @@ rect(s1, 0.8, 1.0, 8.4, 5.6, RGBColor(0x1a, 0x34, 0x7e))
 tb(s1, "NXTWAVE GROWTH INTERN CHALLENGE", 1.2, 1.25, 8.0, 0.45, size=10, bold=True, color=CYAN)
 tb(s1, "Build Your First AI Project\nin 60 Minutes", 1.2, 1.75, 8.0, 1.9, size=32, bold=True, color=WHITE)
 tb(s1, "Campaign to get 500 Final-Year Engineering Students to Register\nin 7 Days with a Budget of Rs.2,000", 1.2, 3.75, 8.0, 0.8, size=13, color=LIGHT)
-tb(s1, "Growth Plan by Sathwik Reddy | B.Tech CSE 2027 | Round 1 Submission", 1.2, 5.1, 8.0, 0.5, size=10, color=RGBColor(0x7d, 0xa1, 0xe8))
+tb(s1, "Growth Plan by Chava Sathwik | 4th Year Engineering Student | Round 1 Submission", 1.2, 5.1, 8.0, 0.5, size=10, color=RGBColor(0x7d, 0xa1, 0xe8))
 
 stats = [("500", "Seats Target"), ("Rs.2,000", "Budget Cap"), ("7 Days", "Duration"), ("4", "Channels")]
 for i, (val, lbl) in enumerate(stats):

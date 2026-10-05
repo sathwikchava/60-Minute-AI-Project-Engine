@@ -1,70 +1,56 @@
-# AI + Learning Notes
+# AI and Learning Notes
 
-> **How to use this file:** Three real interactions from this build session are drafted below.  
-> Fields marked **[DRAFT – verify & rewrite in your own voice]** must be edited to match what actually happened in your conversation with AI. The structure and section headings are final.
-
----
-
-## Template Structure
-
-Each entry follows:
-
-```
-What I asked AI →
-What AI suggested →
-What I actually used / changed →
-```
+Candidate: Chava Sathwik
+Status: 4th Year Engineering Student
 
 ---
 
-## Entry 1 — Referral System Architecture
+## Entry 1: Referral System Architecture
 
-**What I asked:**
-> "How should I structure a referral tracking system for a student registration page that works without a backend database?"
+What I asked:
+"How should I structure a referral tracking system for a student registration page that works without a complex backend?"
 
-**What AI suggested:** [DRAFT – verify against what really happened]
-> AI initially suggested using Google Sheets via Apps Script as a lightweight "free-tier database" — every registration would POST to a Google Sheet and each ambassador code would be a sheet row. It also suggested a cookie-based approach to prevent duplicate referral claims.
+What AI suggested:
+AI initially suggested using Google Sheets via Apps Script as a free database where each registration would post to a row.
 
-**What I actually used / changed:**
-> I rejected the Google Sheets approach for the primary data store because it introduces latency (300–600ms per write) and breaks under concurrent mobile submissions from a WhatsApp blast — exactly the spike scenario we'd face. I kept it as an *export option* in the admin CSV download, but chose localStorage as the live data store for the demo. For production I'd swap localStorage for Supabase with optimistic UI updates.
-
----
-
-## Entry 2 — AI Project Idea Personalization Feature
-
-**What I asked:**
-> "How should I generate personalized AI project ideas for students based on branch and interest? Should I call Gemini API live for each student or pre-bake the data?"
-
-**What AI suggested:** [DRAFT – verify against what really happened]
-> AI suggested calling the Gemini API in real-time with a structured prompt that included branch, interest area, and a constraint ("60-minute beginner sprint") to generate hyper-personalised project briefs dynamically. It provided a prompt template for structured JSON output.
-
-**What I actually used / changed:**
-> I agreed with the approach conceptually, but built the curated JSON fallback first (8 hand-written blueprints with full STAR resume bullets) before wiring any API. Reason: if Gemini rate-limits or the API key is absent, the demo still works perfectly — the evaluator never sees a broken state. The API key pathway is live in `.env.example`. For the submission demo, the curated data is more reliable and the STAR bullets are better-crafted than what a rapid API call would generate.
+What I actually used and changed:
+I decided against Google Sheets for live form storage because it is slower on mobile networks and can fail when many students register at the same time during class message broadcasts. Instead, I saved data directly in browser storage for the demo and provided a clean CSV export option in the coordinator dashboard.
 
 ---
 
-## Entry 3 — Landing Page vs. Full System
+## Entry 2: AI Project Idea Finder Feature
 
-**What I asked:**
-> "Should I build a plain landing page or something more comprehensive? The brief says 'more complex = more brownie points'."
+What I asked:
+"How should I provide personalized AI project ideas based on branch and interest?"
 
-**What AI suggested:** [DRAFT – verify against what really happened]
-> AI suggested building a "growth engine" rather than a landing page — combining the registration form, a referral loop, an admin analytics dashboard, and a WhatsApp message-kit into a single deployable system. It framed this as the difference between submitting a "brochure" vs. submitting a "machine."
+What AI suggested:
+AI suggested calling an external API on every click with prompts for each student.
 
-**What I actually used / changed:**
-> I agreed with the system framing and built all 6 layers (A-F from the brief). The one thing I pushed back on: AI suggested adding a full n8n automation workflow for email sequences. I de-prioritized that because the submission is evaluated primarily by the product and strategy, not backend automation tooling that an evaluator can't see run live. I instead built the WhatsApp message-kit page as a visible, interactive proxy for the automation layer.
+What I actually used and changed:
+I created a curated list of 8 practical blueprints for different branches like CSE and ECE first. This ensures the demo never breaks or delays if an API key is missing or rate limited.
+
+---
+
+## Entry 3: Landing Page versus Complete Growth System
+
+What I asked:
+"Should I build a single landing page or a full referral system?"
+
+What AI suggested:
+AI suggested building a complete system that includes registration validation, a referral rewards tier, an admin dashboard, and WhatsApp templates.
+
+What I actually used and changed:
+I built all of these user facing modules. However, AI also suggested setting up background email automation on an external server. I rejected that because it adds complex setup that cannot be verified easily. Instead, I built the WhatsApp copy paste templates directly into the webpage so anyone can test it with one click.
 
 ---
 
 ## What AI Suggested That I Deliberately Rejected
 
-> *Answer these honestly — this section is explicitly evaluated in the submission.*
+1. Google Sheets as the main database:
+Rejected because of slow response times and risk of errors during concurrent traffic spikes from WhatsApp groups.
 
-**Rejection 1 — Google Sheets as primary database:**  
-AI recommended Google Sheets via Apps Script for simplicity. Rejected because it cannot handle concurrent writes from a WhatsApp viral blast spike, introduces 300–600ms API latency per form submission, and exposes student PII via a shareable spreadsheet URL if misconfigured. Chose localStorage (demo) + Supabase schema in `.env.example` (production path).
+2. Made up student testimonials:
+Rejected because the challenge guidelines specifically prohibit fake testimonials. I used honest demo counters and college lists clearly marked as simulation data.
 
-**Rejection 2 — n8n Email Automation Workflow:**  
-AI suggested building a full n8n flow for email confirmation sequences. Rejected because: (a) it requires a running n8n instance which adds setup complexity for the evaluator, (b) the value is invisible in a 3-minute demo video, and (c) it consumed time better spent making the visible UI components more polished. Built the WhatsApp kit instead — same automation value, fully interactive in the browser.
-
-**Rejection 3 — Testimonial Social Proof Section:**  
-AI suggested adding 3–4 student testimonials with photos for social proof. Rejected because the brief explicitly says "no fabricated testimonials, no fake statistics presented as fact." Replaced with real structural social proof: registration counter, college diversity display, and ambassador leaderboard — all powered by realistic but clearly-labelled demo seed data.
+3. External server automation:
+Rejected because external tools are invisible during a short presentation and can fail during evaluation. Built client side copy tools instead.

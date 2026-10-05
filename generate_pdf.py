@@ -52,7 +52,7 @@ story.append(Paragraph("NxtWave Growth Intern Challenge", TAG))
 story.append(Paragraph("Growth Campaign Summary", H1))
 story.append(Paragraph("Build Your First AI Project in 60 Minutes — Get 500 Final-Year Engineering Students Registered in 7 Days with a Budget of Rs.2,000", NRM))
 story.append(sp(0.2))
-story.append(Paragraph("Submitted by: Sathwik Reddy | B.Tech CSE 2027 | Round 1 Growth Challenge", SML))
+story.append(Paragraph("Submitted by: Chava Sathwik | 4th Year Engineering Student | Round 1 Growth Challenge", SML))
 story.append(hr())
 
 # KPI row

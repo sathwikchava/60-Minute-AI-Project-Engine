@@ -21,7 +21,7 @@ function validateInputs(name, email, phone, college) {
 }
 
 // Test 1: Valid inputs
-const test1 = validateInputs('Sathwik Reddy', 'sathwik@gmail.com', '9848022334', 'JNTUH');
+const test1 = validateInputs('Chava Sathwik', 'sathwik@gmail.com', '9848022334', 'JNTUH');
 assert.strictEqual(test1.valid, true, 'Test 1 Failed: Valid input should pass');
 console.log('✓ Test 1: Valid registration input passes validation');
 

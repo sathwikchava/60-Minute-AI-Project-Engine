@@ -27,9 +27,9 @@ const AppState = {
   projectIdeas: []
 };
 
-// Seed dataset of realistic Tier-2/3 student registrations
+// Seed dataset of realistic student registrations
 const DEMO_SEEDS = [
-  { id: 'NW-1001', name: 'Sathwik Reddy', email: 'sathwik.btech@gmail.com', phone: '9848022334', college: 'JNTU College of Engineering, Hyderabad', branch: 'CSE / IT', gradYear: '2025', channel: 'Campus Ambassador', refCode: 'NW-SATH-9021', referredBy: 'AMB_JNTU_01', referralCount: 3, createdAt: '2026-10-01 09:30' },
+  { id: 'NW-1001', name: 'Chava Sathwik', email: 'chava.sathwik@gmail.com', phone: '9848022334', college: 'JNTU College of Engineering, Hyderabad', branch: 'CSE / IT', gradYear: '2025', channel: 'Campus Ambassador', refCode: 'NW-SATH-9021', referredBy: 'AMB_JNTU_01', referralCount: 3, createdAt: '2026-10-01 09:30' },
   { id: 'NW-1002', name: 'Ananya Deshmukh', email: 'ananya.d@pict.edu', phone: '9765432190', college: 'Pune Institute of Computer Technology (PICT)', branch: 'CSE / IT', gradYear: '2025', channel: 'Viral Referral', refCode: 'NW-ANAN-4412', referredBy: 'NW-SATH-9021', referralCount: 1, createdAt: '2026-10-01 11:15' },
   { id: 'NW-1003', name: 'Karthik Raja', email: 'karthik.r@ceg.annauniv.edu', phone: '9443215678', college: 'Anna University (CEG Campus), Chennai', branch: 'ECE', gradYear: '2025', channel: 'Campus Ambassador', refCode: 'NW-KART-1823', referredBy: 'AMB_ANNA_02', referralCount: 2, createdAt: '2026-10-01 13:40' },
   { id: 'NW-1004', name: 'Rahul Varma', email: 'rahul.v@griet.ac.in', phone: '9876501234', college: 'GRIET Hyderabad', branch: 'AI / Data Science', gradYear: '2025', channel: 'WhatsApp Groups', refCode: 'NW-RAHU-8831', referredBy: 'AMB_JNTU_01', referralCount: 0, createdAt: '2026-10-02 08:20' },
@@ -43,74 +43,74 @@ const DEMO_SEEDS = [
 
 // WhatsApp Message Templates
 const WHATSAPP_TEMPLATES = {
-  'group-drop': `🚨 *Final-Year Engineering Placement Alert* 🚨
+  'group-drop': `Notice for 4th Year Engineering Students
 
-Hey batch of 2025/2026! 👋
-If your resume still has the same standard tutorial projects (like Netflix clones or Titanic survival), recruiters are filtering them out in 5 seconds.
+Hello everyone!
+If your resume has the same old academic projects like a simple website or basic calculator, recruiters tend to overlook them.
 
-NxtWave is conducting a *100% FREE Live Workshop*:
-👉 *"Build Your First AI Project in 60 Minutes"*
+NxtWave is hosting a free live workshop:
+"Build Your First AI Project in 60 Minutes"
 
-✅ *What you get in 60 mins:*
-1. Live build & deploy a real AI web app (ATS-ready)
-2. Verified NxtWave Certificate for your LinkedIn
-3. Zero math/AI prerequisites needed (Beginner friendly)
-4. GitHub code template & STAR-format resume bullet points
+What you will get:
+1. Build and deploy a real working AI web project
+2. Verified NxtWave Certificate for your profile
+3. No machine learning or complex math needed
+4. Starter code and resume ready bullet points
 
-🗓 *When:* This Saturday at 6:00 PM IST
-🎟 *Seats are capped at 500:*
-Register free using our college priority pass:
-👇
+When: Saturday at 6:00 PM IST
+Limited to 500 students.
+
+Register for free here:
 {{LINK}}
 
-(Free pass unlocked for our campus. Share with friends who need project proof!)`,
+Feel free to share this with friends preparing for placements!`,
 
-  'placement-cell': `Subject: Free 60-Minute AI Project Workshop for Final-Year Students [NxtWave]
+  'placement-cell': `Subject: Free 60 Minute AI Project Workshop for 4th Year Students
 
-Respected Placement Coordinator / HOD Sir,
+Respected Placement Officer or Faculty Coordinator,
 
-To support our 2025/2026 graduating batch in clearing technical rounds and strengthening resumes with modern Generative AI projects, NxtWave is hosting an authorized online sprint:
+To help our final year batch prepare for technical interviews and build practical generative AI projects for their resumes, NxtWave is conducting a free online workshop:
 
-*Event:* Build Your First AI Project in 60 Minutes
-*Target Audience:* CSE, IT, ECE, EEE and Allied Final-Year Students
-*Cost:* 100% Free (Sponsored by NxtWave)
-*Deliverable:* Live hosted GitHub project + Verifiable Certificate
+Event: Build Your First AI Project in 60 Minutes
+For: CSE, IT, ECE, EEE and allied engineering students
+Cost: Free
+Outcome: Working project link and Certificate of Completion
 
-Kindly request you to share this registration notice with final-year class groups:
-Registration Portal: {{LINK}}
+Please share this registration link with student groups:
+{{LINK}}
 
 Regards,
-Campus Placement Ambassador
+Campus Coordinator
 {{AMB_NAME}}`,
 
-  'reminder-t24': `⏰ *Quick Reminder: Tomorrow at 6:00 PM IST!*
+  'reminder-t24': `Reminder: Workshop tomorrow at 6:00 PM IST
 
-Hey guys! Just 24 hours left for the *"Build Your First AI Project in 60 Minutes"* workshop.
+Hello everyone!
+This is a quick reminder that the workshop "Build Your First AI Project in 60 Minutes" is taking place tomorrow evening.
 
-Over 340+ students from our college and other tier-2/3 campuses have already secured their spots.
-Make sure you have your laptop ready with Google Chrome.
+Many students from our college have already registered. Please keep your laptop ready with Google Chrome.
 
-Lock your verified seat before the 500 limit closes:
-👉 {{LINK}}`,
+Save your free seat here before the 500 limit is reached:
+{{LINK}}`,
 
-  'reminder-t1': `⚡ *STARTING IN 60 MINUTES!* ⚡
+  'reminder-t1': `Starting in 1 hour!
 
-Grab your coffee and open your laptop!
-The live AI project build session goes live at 6:00 PM IST.
+Please keep your laptop ready.
+The live AI project workshop starts today at 6:00 PM IST.
 
-Join with the code starter kit here:
-👉 {{LINK}}
+Join using the session link here:
+{{LINK}}
 
-See you inside the sprint! 🚀`,
+See you in the session!`,
 
-  'post-event': `🎉 *Great job building your AI project today!*
+  'post-event': `Good job on building your AI project today!
 
-Here are the post-event next steps:
-1. Submit your deployed live project URL for your *NxtWave Certificate*:
-👉 {{LINK}}
-2. Access the GitHub Repository & STAR-format resume bullets.
+Next steps to complete:
+1. Submit your deployed project link to receive your NxtWave Certificate:
+{{LINK}}
+2. Review your code repository and add the project to your resume.
 
-Share your project on LinkedIn and tag @NxtWave! 🚀`
+You can also share your project link on LinkedIn and tag NxtWave!`
 };
 
 // INITIALIZATION
@@ -408,7 +408,7 @@ function handleGenerateIdea() {
     if (match) {
       document.getElementById('result-branch-badge').textContent = match.branch;
       document.getElementById('result-interest-badge').textContent = match.interest;
-      document.getElementById('result-duration-badge').textContent = `⏱ ${match.duration} Build`;
+      document.getElementById('result-duration-badge').textContent = `${match.duration} Build`;
       document.getElementById('result-difficulty').textContent = match.difficulty;
       document.getElementById('result-title').textContent = match.title;
       document.getElementById('result-tagline').textContent = match.tagline;
@@ -432,7 +432,7 @@ function handleGenerateIdea() {
     }
 
     btn.disabled = false;
-    btn.innerHTML = '<span>✦ Generate My 60-Min AI Project</span>';
+    btn.innerHTML = '<span>Generate My 60 Min AI Project</span>';
   }, 350);
 }
 
@@ -491,7 +491,7 @@ function handleRegistrationSubmit(e) {
   const existing = AppState.registrations.find(r => r.email === email || r.phone === phone);
   if (existing) {
     alertBox.className = 'form-alert error';
-    alertBox.textContent = `⚠️ You are already registered with ticket #${existing.id}! Your referral link is ready below.`;
+    alertBox.textContent = `You are already registered with ticket #${existing.id}. Your referral link is ready below.`;
     alertBox.style.display = 'block';
     updateReferralHub(existing);
     document.getElementById('referrals').scrollIntoView({ behavior: 'smooth' });
@@ -546,11 +546,11 @@ function handleRegistrationSubmit(e) {
     localStorage.setItem('nw_registrations', JSON.stringify(AppState.registrations));
     AppState.currentUser = newRecord;
 
-    btnText.textContent = 'Spot Confirmed! ✓';
+    btnText.textContent = 'Seat Confirmed';
     btnSpinner.style.display = 'none';
 
     alertBox.className = 'form-alert success';
-    alertBox.textContent = `🎉 Registration successful! Your VIP seat #${regId} is locked. Access your Referral Toolkit below.`;
+    alertBox.textContent = `Registration successful! Your seat #${regId} is confirmed. Your referral link is ready below.`;
     alertBox.style.display = 'block';
 
     updateReferralHub(newRecord);
@@ -583,9 +583,9 @@ function updateReferralHub(user) {
   document.getElementById('referral-progress-fill').style.width = `${fillPct}%`;
 
   // Milestone Tiers
-  updateMilestoneTier('tier-1-status', count >= 1, 'Unlocked! ✓', 'Locked (Need 1)');
-  updateMilestoneTier('tier-2-status', count >= 2, 'Unlocked! ✓', 'Locked (Need 2)');
-  updateMilestoneTier('tier-3-status', count >= 3, 'VIP Unlocked! 👑', 'Locked (Need 3)');
+  updateMilestoneTier('tier-1-status', count >= 1, 'Unlocked', 'Locked (Need 1)');
+  updateMilestoneTier('tier-2-status', count >= 2, 'Unlocked', 'Locked (Need 2)');
+  updateMilestoneTier('tier-3-status', count >= 3, 'Unlocked', 'Locked (Need 3)');
 }
 
 function updateMilestoneTier(elementId, isUnlocked, unlockedText, lockedText) {
@@ -606,9 +606,9 @@ function handleCopyReferralLink() {
   linkInput.select();
   navigator.clipboard.writeText(linkInput.value).then(() => {
     const btnText = document.getElementById('copy-btn-text');
-    btnText.textContent = 'Copied! ✓';
+    btnText.textContent = 'Copied';
     showToast('Link copied to clipboard! Share it in your college groups.');
-    setTimeout(() => { btnText.textContent = '📋 Copy Link'; }, 2000);
+    setTimeout(() => { btnText.textContent = 'Copy Link'; }, 2000);
   }).catch(() => {
     showToast('Link ready to copy!');
   });
@@ -620,7 +620,7 @@ function handleShareWhatsApp() {
   const origin = window.location.origin + window.location.pathname;
   const link = `${origin}?ref=${user.refCode}`;
 
-  const message = `🚨 *Free 60-Minute AI Project Workshop for Placements* 🚨\n\nHey guys! I just registered for NxtWave's live sprint *"Build Your First AI Project in 60 Minutes"*. \n\nWe will live code, deploy, and add an AI project to our resume (with a verified certificate). Zero prior ML/coding prerequisites.\n\nUse my invite link to reserve a seat before the 500 limit closes:\n👉 ${link}`;
+  const message = `Free 60 Minute AI Project Workshop\n\nHello! I registered for NxtWave's live session "Build Your First AI Project in 60 Minutes".\n\nWe will write code, deploy a working AI app, and get a certificate for campus placements. No prior AI background required.\n\nRegister for free using this link:\n${link}`;
 
   const waUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(message)}`;
   window.open(waUrl, '_blank');
@@ -631,13 +631,13 @@ function handleShareLinkedIn() {
   const user = AppState.currentUser || { name: 'Engineering Student', refCode: 'NW-DEMO-01' };
   const origin = window.location.origin + window.location.pathname;
   const link = `${origin}?ref=${user.refCode}`;
-  const text = `Excited to join NxtWave's 60-Minute AI Project Workshop! Building a deployable AI app for final-year placement readiness. Join with my pass: ${link}`;
+  const text = `Joining NxtWave's 60 Minute AI Project Workshop to build and deploy a working AI project for campus placements. You can register for free here: ${link}`;
 
   const liUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(link)}`;
   window.open(liUrl, '_blank');
 }
 
-// Simulate Friend Sign-up via User's Referral Code
+// Simulate Friend Sign up via User's Referral Code
 function handleSimulateReferral() {
   if (!AppState.currentUser) return;
   AppState.currentUser.referralCount = (AppState.currentUser.referralCount || 0) + 1;
