@@ -8,7 +8,7 @@
 
 ## 🔗 Live Demo
 
-> **Netlify URL:** *(Add the URL here after deploying — see Deploy section below)*  
+> **Netlify Live Demo:** https://nxtwave-ai60-engine.netlify.app  
 > **GitHub Repo:** https://github.com/sathwikchava/60-Minute-AI-Project-Engine
 
 ---
