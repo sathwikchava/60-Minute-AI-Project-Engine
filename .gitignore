@@ -1,0 +1,22 @@
+# NxtWave Growth Intern Challenge
+# Generated files
+*.pyc
+__pycache__/
+.env
+.env.local
+*.log
+
+# Keep .env.example tracked
+!.env.example
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Node modules (if any)
+node_modules/
+
+# Build outputs
+dist/
+.next/

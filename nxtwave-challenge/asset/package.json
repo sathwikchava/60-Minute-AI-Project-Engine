@@ -1,0 +1,13 @@
+{
+  "name": "nxtwave-growth-engine",
+  "version": "1.0.0",
+  "description": "NxtWave Growth Intern Challenge: Referral-Powered 60-Minute AI Project Workshop Registration System",
+  "scripts": {
+    "start": "npx serve -l 3000 .",
+    "dev": "npx serve -l 3000 .",
+    "test": "node tests/test-engine.js"
+  },
+  "keywords": ["nxtwave", "growth", "referral-engine", "glassmorphism", "edtech"],
+  "author": "Sathwik Reddy",
+  "license": "MIT"
+}
